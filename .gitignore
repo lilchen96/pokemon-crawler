@@ -1,0 +1,5 @@
+data
+data-backup
+node_modules
+output
+pnpm-lock.yaml
