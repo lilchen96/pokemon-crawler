@@ -1,10 +1,10 @@
 {
-  "name": "pokemon-reptile",
+  "name": "pokemon-crawler",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "rimraf output && tsc && node output/index",
+    "crawl": "rimraf output && tsc && node output/index",
     "format": "rimraf output && tsc && node output/format/index"
   },
   "author": "",
