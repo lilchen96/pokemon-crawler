@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "rimraf output && tsc && node output"
+    "start": "rimraf output && tsc && node output/index",
+    "format": "rimraf output && tsc && node output/format/index"
   },
   "author": "",
   "license": "ISC",

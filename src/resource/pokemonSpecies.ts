@@ -1,12 +1,12 @@
 import { pokemonSpeciesDirPath } from '../config';
-import { handlehandleCatchResourceList } from '../utils/utils';
+import { handleCatchResourceList } from '../utils/utils';
 import { getResourceList } from './resourceList';
 
 const resourceName = 'pokemon-species';
 
 async function catchData() {
   const resourceList = await getResourceList(resourceName);
-  handlehandleCatchResourceList(
+  handleCatchResourceList(
     resourceList,
     resourceName,
     pokemonSpeciesDirPath,

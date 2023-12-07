@@ -1,5 +1,5 @@
 import { pokemonDirPath } from '../config';
-import { handlehandleCatchResourceList } from '../utils/utils';
+import { handleCatchResourceList } from '../utils/utils';
 import { getResourceList } from './resourceList';
 
 const resourceName = 'pokemon';
@@ -7,7 +7,7 @@ const resourceName = 'pokemon';
 async function catchData() {
   const resourceList = await getResourceList(resourceName);
   
-  handlehandleCatchResourceList(
+  handleCatchResourceList(
     resourceList,
     resourceName,
     pokemonDirPath,

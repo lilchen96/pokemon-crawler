@@ -58,7 +58,7 @@ export async function handleCatchResource(
 }
 
 // 批量抓取资源列表
-export function handlehandleCatchResourceList(
+export function handleCatchResourceList(
   resourceList: Resource[],
   resourceName: string,
   writeDirPath: string,
@@ -88,7 +88,7 @@ export function handlehandleCatchResourceList(
           if (errorResourceList.length > 0) {
             ora().warn(errorSummary);
             if (again) {
-              handlehandleCatchResourceList(
+              handleCatchResourceList(
                 errorResourceList,
                 resourceName,
                 writeDirPath,

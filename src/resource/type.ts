@@ -1,12 +1,12 @@
 import { typeDirPath } from '../config';
-import { handlehandleCatchResourceList } from '../utils/utils';
+import { handleCatchResourceList } from '../utils/utils';
 import { getResourceList } from './resourceList';
 
 const resourceName = 'type';
 
 async function catchData() {
   const resourceList = await getResourceList(resourceName);
-  handlehandleCatchResourceList(
+  handleCatchResourceList(
     resourceList,
     resourceName,
     typeDirPath,

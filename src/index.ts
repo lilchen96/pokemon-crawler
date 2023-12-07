@@ -7,6 +7,7 @@ import { deleteFolder, copyFolder } from './utils/utils';
 import {
   dataDirPath,
   backUpDataDirPath,
+  resourceListDirPath,
   pokemonSpeciesDirPath,
   pokemonDirPath,
   typeDirPath,
@@ -27,6 +28,7 @@ async function init() {
 }
 
 function initChildrenFolders() {
+  fs.mkdir(resourceListDirPath);
   fs.mkdir(pokemonSpeciesDirPath);
   fs.mkdir(pokemonDirPath);
   fs.mkdir(typeDirPath);
