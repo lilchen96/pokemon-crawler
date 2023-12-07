@@ -1,6 +1,6 @@
-# pokemon-reptile
+# pokemon-crawler
 
-Retrieve JSON-formatted data for Pokémon, based on the PokeAPI.
+Crawl JSON-formatted data for Pokémon, based on the PokeAPI.
 
 ## How to Run
 
