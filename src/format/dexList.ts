@@ -74,6 +74,16 @@ async function getDexItem(name: string) {
   const translatedPokemonName = pokemonSpeciesData.names.find(
     (item) => item.language.name === 'zh-Hans'
   ).name;
+  // 翻译后的宝可梦描述文本条目
+  const translatedFlavorText =
+    pokemonSpeciesData.flavor_text_entries.find(
+      (item) => item.language.name === 'zh-Hans'
+    )?.flavor_text ?? '';
+  // 翻译后的宝可梦genus
+  const translatedGenusName =
+    pokemonSpeciesData.genera.find((item) => item.language.name === 'zh-Hans')
+      ?.genus ?? '';
+
   const pokemonDataName = pokemonSpeciesData.varieties.find(
     (item) => item.is_default
   ).pokemon.name;
@@ -105,7 +115,9 @@ async function getDexItem(name: string) {
   return {
     id: pokemonSpeciesData.id,
     name: translatedPokemonName,
+    flavor_text: translatedFlavorText,
     types: formatTypes,
+    genus_name: translatedGenusName,
   };
 }
 
